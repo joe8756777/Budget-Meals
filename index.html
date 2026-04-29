@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Budget Bites – Cheap & Easy Meals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Budget Bites</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="#under5">Under $5 Meals</a>
+      <a href="#15min">15-Minute Meals</a>
+      <a href="#mealprep">Meal Prep</a>
+      <a href="#basics">Cooking Basics</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Delicious Meals Under $5</h1>
+        <p>Quick, cheap, and filling recipes anyone can make—even on the tightest budget.</p>
+        <div class="hero-buttons">
+          <a href="#recipes" class="btn primary">Browse Recipes</a>
+          <a href="#under5" class="btn secondary">Start with $5 Meals</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="section" id="categories">
+      <h2>Featured Categories</h2>
+      <div class="grid categories-grid">
+        <article class="card">
+          <h3 id="under5">Under $5 Meals</h3>
+          <p>Stretch your budget with filling, flavorful dishes.</p>
+          <a href="#recipes" class="link">View recipes</a>
+        </article>
+        <article class="card">
+          <h3 id="15min">15-Minute Meals</h3>
+          <p>Fast dinners for busy nights.</p>
+          <a href="#recipes" class="link">View recipes</a>
+        </article>
+        <article class="card">
+          <h3 id="mealprep">Meal Prep on a Budget</h3>
+          <p>Cook once, eat all week—without overspending.</p>
+          <a href="#recipes" class="link">View recipes</a>
+        </article>
+        <article class="card">
+          <h3>Pantry-Only Recipes</h3>
+          <p>Turn simple pantry staples into satisfying meals.</p>
+          <a href="#recipes" class="link">View recipes</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Latest Recipes -->
+    <section class="section" id="recipes">
+      <h2>Latest Recipes</h2>
+      <div class="grid recipes-grid">
+        <article class="card">
+          <h3><a href="recipe.html">$5 Chicken Stir Fry</a></h3>
+          <p>A fast, colorful stir fry using budget-friendly ingredients.</p>
+          <a href="recipe.html" class="btn small">View Recipe</a>
+        </article>
+        <article class="card">
+          <h3>Cheap Ramen Upgrade</h3>
+          <p>Turn instant ramen into a full, satisfying meal.</p>
+          <button class="btn small" disabled>Coming soon</button>
+        </article>
+        <article class="card">
+          <h3>One-Pot Tomato Pasta</h3>
+          <p>Minimal dishes, maximum flavor, tiny price.</p>
+          <button class="btn small" disabled>Coming soon</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Budget Tips -->
+    <section class="section" id="basics">
+      <h2>Budget Cooking Tips</h2>
+      <div class="grid tips-grid">
+        <article class="card">
+          <h3>How to Build a Cheap Pantry</h3>
+          <p>Core ingredients that unlock dozens of low-cost meals.</p>
+        </article>
+        <article class="card">
+          <h3>Meal Prep for $10 a Week</h3>
+          <p>Plan ahead and save money with simple prep.</p>
+        </article>
+        <article class="card">
+          <h3>Seasoning on a Budget</h3>
+          <p>Affordable spices that make everything taste better.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Email Signup -->
+    <section class="section signup">
+      <h2>Save Money Every Week</h2>
+      <p>Get cheap recipes and weekly meal plans straight to your inbox.</p>
+      <form class="signup-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="btn primary">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <h2>About Budget Bites</h2>
+      <p>
+        Budget Bites is all about making cooking affordable, approachable, and actually enjoyable.
+        Every recipe is designed to be cheap, simple, and satisfying—perfect for students, families,
+        and anyone watching their wallet.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Budget Bites · All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
